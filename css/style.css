@@ -1,0 +1,21 @@
+:root{
+    --primary-color: pink;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+}
+figure{
+    margin: 0;
+    width: 30rem;
+}
+img{
+    width: 30rem;
+}
+.content{
+    margin: 0.5rem 0;
+    width: 30rem;
+    height: 50rem;
+    background-color:var(--primary-color);
+}
