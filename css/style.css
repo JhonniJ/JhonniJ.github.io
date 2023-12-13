@@ -1,37 +1,66 @@
-:root{
+:root {
     --primary-color: pink;
     --gray-color: rgba(79, 87, 114, 0.993);
     --light-color: rgb(230, 223, 209);
+    --font: 1.2rem;
 }
-html{
-    font-size: 62.5%;
+*{
     box-sizing: border-box;
-    
-}
-figure{
     margin: 0;
-    width: 30rem;
+    padding: 0;
 }
-figcaption{
+html {
+    font-size: 62.5%;
+}
+body{
+  max-width: 1400px;
+  margin: 0 20rem;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 4rem;
+    width: 100%;
+    min-width: 31rem;
+    background-color: var(--primary-color);
+    font-size: var(--font);
+}
+.img-container{
+    background-color: var(--gray-color);
+    margin: 0 auto;
+
+}
+
+
+.span {
     background-color: var(--gray-color);
     color: var(--light-color);
-    padding: 2rem;
-    margin: center;
-}
-img{
-    width: 30rem;
+    opacity: 85%;
+    width: 20rem;
+    padding: 1.7rem; 
+    position: relative;
+    bottom:  7rem; 
+    margin: 0 auto;
     border-radius: 2rem;
-}
-.content{
-    margin: 0.5rem 0;
-    width: 30rem;
-    height: 50rem;
-    background-color:var(--primary-color);
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 
-footer{
+img {
+    display: block;
+    width: 90%;
+    max-width: 31rem;
+    border-radius: 2rem;
+    margin: 1rem auto;
+}
+
+
+
+
+footer {
     background-color: var(--gray-color);
     color: var(--light-color);
 }
