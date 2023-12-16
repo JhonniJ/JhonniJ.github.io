@@ -1,8 +1,10 @@
 :root {
-    --primary-color: pink;
-    --gray-color: rgba(79, 87, 114, 0.993);
-    --light-color: rgb(230, 223, 209);
-    --font: 1.2rem;
+    --primary-color: #00487C;
+    --gray-color: #EFF1ED;
+    --secundary-color: #8093F1;
+    --thirdary-color: #464D77;
+    --title-color: #FB8F67;
+    --font: 1.5rem;
 }
 *{
     box-sizing: border-box;
@@ -13,41 +15,26 @@ html {
     font-size: 62.5%;
 }
 body{
-  max-width: 1400px;
-  margin: 0 20rem;
+  max-width: 100rem;
+  font-family: Helvetica, sans-serif;
+  margin: 0 auto;
+  background-color: var(--gray-color);
 }
-
-
+header{
+    background-color: var(--primary-color);
+}
+.title{
+    color: var(--gray-color);
+    font-size: 2.5rem;
+}
 .content {
     display: flex;
-    flex-wrap: wrap;
-    min-height: 4rem;
+    flex-direction: column;
+    min-height: 39rem;
     width: 100%;
-    min-width: 31rem;
     background-color: var(--primary-color);
     font-size: var(--font);
 }
-.img-container{
-    background-color: var(--gray-color);
-    margin: 0 auto;
-
-}
-
-
-.span {
-    background-color: var(--gray-color);
-    color: var(--light-color);
-    opacity: 85%;
-    width: 20rem;
-    padding: 1.7rem; 
-    position: relative;
-    bottom:  7rem; 
-    margin: 0 auto;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-}
-
 
 img {
     display: block;
@@ -57,10 +44,25 @@ img {
     margin: 1rem auto;
 }
 
+section{
+    height: 50rem;
+}
+.aboutMe{
+    background-color: var(--secundary-color);
+}
 
+.study{
+    background-color: var(--thirdary-color);
+}
 
-
+.proyectos{
+    background-color: var(--primary-color);
+}
+.contacMe{
+    background-color: var(--secundary-color);
+}
 footer {
-    background-color: var(--gray-color);
-    color: var(--light-color);
+    background-color: var(--thirdary-color);
+    color: var(--secundary-color);
+    
 }

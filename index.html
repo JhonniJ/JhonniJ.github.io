@@ -8,30 +8,36 @@
     <title>Jhonni J.</title>
 </head>
 <body>
-    <header class="content">
-        <nav class="content">
-            <a href="#">burger-menu</a>
+    <header class="header">
+        <nav class="header nav">
+            <a href="#aboutMe" class="header__item">Sobre mi</a>
+            <a href="#study" class="header__item" href="#">Educación</a>
+            <a href="#proyectos" class="header__item">proyectos</a>
 
         </nav>
-        <figure class="content img-container">
-            <img src="https://drive.google.com/uc?export=view&id=1_FAhJZnl4Pq7GnmYVcZZXnSz0I0xRLvC" alt="aquí toy">
-            <figcaption class="span">
-                <span class="leyenda">disfruten de la vista perros</span>
-            </figcaption>
-            <h1>El programador junior más pro</h1>
-        </figure>
+        
         <p>Este es el principio de mi nueva historia, si no te molesta preparate para tener envidia de la buena</p>
     </header>
     
-    <div class="content">
-        <p>Un apasionado de la tecnologia que disfruta de hacer locuras y cosas que para las personas "normales" podria ser imposibles, no dejes que su ternura te engañe es un emprendedor, un tiburon en el mundo de los negocios.
+    <section class="aboutMe" id="aboutMe">
+        <h2 class="title">Sobre me</h2>
+        <figure class="content img-container">
+            <img src="https://drive.google.com/uc?export=view&id=1_FAhJZnl4Pq7GnmYVcZZXnSz0I0xRLvC" alt="aquí toy">
+            <figcaption class="figcap">
+                <span>Este soy yo</span>
+            </figcaption>
+            <h1 class="img__title">El programador junior más pro</h1>
+        </figure>
+        <p class="section__item">Un apasionado de la tecnologia que disfruta de hacer locuras y cosas que para las personas "normales" podria ser imposibles, no dejes que su ternura te engañe es un emprendedor, un tiburon en el mundo de los negocios.
         </p>
         <!-- hacer 'targetas' cuyo titulo tengan preguntas que voy a responder cuando las abran -->
-        <p>
-            Llevo ya 3 años tratando aprendiendo a programar de manera autodidacta, en este largo camino he tenido varios tropiezos, varias caidas y muchas veces pense en abandonar y hacer algo más tradicional, ser enfermero, policia, doctor, mecanico. Todas eran buenas opciones pero le faltaban algo de "chispa" que no lograba encontrar 
+        <p class="section__item">
+            Llevo ya 1 años tratando aprendiendo a programar de manera autodidacta, en este largo camino he tenido varios tropiezos, varias caidas y muchas veces pense en abandonar y hacer algo más tradicional, ser enfermero, policia, doctor, mecanico. Todas eran buenas opciones pero le faltaban algo de "chispa" que no lograba encontrar 
         </p>
-    </div>
-    <div class="content">
+    </section>
+    
+    <section class="study" id="study">
+        <h2 class="title">Estudios</h2>
         <!-- lista de estudios -->
         <img src="https://i.imgur.com/pzTQAIS.jpeg" alt="little cat">
         <ul class="lista">
@@ -43,18 +49,29 @@
             <li class="lista__item">platzi</li>
             <li class="lista__item">platzi</li>
         </ul>
-    </div>
-    <div class="content">
+    </section>
+    <section class="proyectos" id="proyectos">
+        <h2 class="title">Proyectos</h2>
         <!-- cards with image of proyect -->
-        <div class="card">va a ir la página
-            <span>titulo de procto</span>
+        <div class="proyectos__card">va a ir la página
+            <span>titulo de proyecto</span>
         </div>
-        <div class="card">va a ir lo de mokepon
+        <div class="proyectos__card">va a ir lo de mokepon
             <span>otro titulo de proyecto</span>
         </div>
-    </div>
-    <footer class="content">
-        <span>Este es el footer</span>
+    </section>
+
+    <section class="contacMe" id="contacMe">
+        <h2 class="title">Contactame ;)</h2>
+        <form action="post" class="form">
+            <label for="name">Nombre</label><input id="name" type="text" placeholder="Nombre">
+            <label for="lastName">Apellido</label><input id="lastName" type="text" placeholder="Apellido">
+            <label for="email">Email</label><input id="email" type="email" placeholder="email">
+        </form>
+    </section>
+    <footer class="footer">
+        <span class="footer__item">Este es el footer</span>
+        <a href="#aboutMe" class="footer__item">Inicio</a>
     </footer>
     
 </body>
