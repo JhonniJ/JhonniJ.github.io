@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #3F84E5;
+    --secundary-color: #EE8434;
+    --tertiary-color: #E9E3E6;
+    --cuaternary-color: #143642;
+    --header-font: 1.8rem;
+    --font: 1.5rem;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+  max-width: 100rem;
+  font-family: Helvetica, sans-serif;
+  margin: 0 auto;
+  background-color: var(--gray-color);
+}
+header, nav a{
+    background-color: var(--primary-color);
+    color: var(--title-color);
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+header{
+    height: 10rem;
+}
+.title{
+    color: var(--gray-color);
+    font-size: 3rem;
+}
+/* .content {
+    min-height: 39rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-size: var(--font);
+} */
+
+img {
+    display: block;
+    width: 70%;
+    max-width: 31rem;
+    border-radius: 2rem;
+    /* margin: 1rem auto; */
+}
+
+section{
+    min-height: 50rem;
+    padding: 1rem 3rem;
+}
+.section__item{
+    font-size: 1.8rem;
+}
+.aboutMe{
+    background-color: var(--secundary-color);
+}
+
+.study{
+    background-color: var(--thirdary-color);
+}
+
+.proyectos{
+    background-color: var(--primary-color);
+    /* display: flex;
+    flex-wrap: wrap;
+    text-align:center; */
+}
+.proyectos__card{
+    width: 30rem;
+    height: 25rem;
+    background-color: var(--title-color);
+    
+}
+
+.contacMe{
+    background-color: var(--secundary-color);
+}
+label{
+    font-size: 1.4rem;
+}
+footer {
+    background-color: var(--thirdary-color);
+    color: var(--secundary-color);
+    
+}
+.imgContainer__item{
+    display: flow-root;
+    float: left;
+}
+.figcap{
+    display: flow-root;
+    padding: 2rem 4rem;
+}

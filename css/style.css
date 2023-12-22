@@ -1,68 +1,60 @@
-:root {
-    --primary-color: #00487C;
-    --gray-color: #EFF1ED;
-    --secundary-color: #8093F1;
-    --thirdary-color: #464D77;
-    --title-color: #FB8F67;
+:root{
+    --primary-color: #3F84E5;
+    --secundary-color: #EE8434;
+    --tertiary-color: #f3f2f5;
+    --cuaternary-color: #143642;
+    --header-font: 1.8rem;
     --font: 1.5rem;
 }
+html{
+    font-size:62.5%;
+}
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
-html {
-    font-size: 62.5%;
-}
+
 body{
-  max-width: 100rem;
-  font-family: Helvetica, sans-serif;
-  margin: 0 auto;
-  background-color: var(--gray-color);
+    background-color: var(--tertiary-color);
+    max-width: 100rem;
+    margin: 0 auto;
 }
-header{
-    background-color: var(--primary-color);
-}
-.title{
-    color: var(--gray-color);
-    font-size: 2.5rem;
-}
-.content {
+main{
+    background-color: var(--cuaternary-color);
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    min-height: 39rem;
-    width: 100%;
-    background-color: var(--primary-color);
-    font-size: var(--font);
 }
 
-img {
-    display: block;
-    width: 90%;
-    max-width: 31rem;
-    border-radius: 2rem;
-    margin: 1rem auto;
-}
-
-section{
-    height: 50rem;
-}
-.aboutMe{
-    background-color: var(--secundary-color);
-}
-
-.study{
-    background-color: var(--thirdary-color);
-}
-
-.proyectos{
-    background-color: var(--primary-color);
-}
-.contacMe{
-    background-color: var(--secundary-color);
-}
-footer {
-    background-color: var(--thirdary-color);
-    color: var(--secundary-color);
+img{
+    border-radius: 3rem;
+    height: 20rem;
     
+}
+
+.title{
+    color: var(--secundary-color);
+    font-size: 4rem;
+}
+.target{
+    width: 25rem;
+    height: 30rem;
+    background-color: var(--tertiary-color);
+    border-radius: 3rem;
+    margin: 1rem auto;
+    padding:1rem;
+    border: 0.4rem solid var(--primary-color);
+}
+.target:hover{
+    border: 1rem solid var(--secundary-color);
+}
+
+
+/* medias queries van de ultimo*/
+
+ @media (min-width: 600px){ 
+    
+    .c2, .c3, .c4{
+        width: 50%;
+    }
 }

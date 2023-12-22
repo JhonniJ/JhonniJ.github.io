@@ -2,77 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi titulo, aquí voy de nuevo</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Jhonni J.</title>
+
+    <!-- media queries, el navegador selecciona la opción acorde al tamaño, es más eficiente
+    <link rel="stylesheet" href="table.css" 
+    media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="desktop.css"
+    media="screen and (min-width: 800px)"> -->
+
 </head>
 <body>
-    <header class="header">
-        <nav class="header nav">
-            <a href="#aboutMe" class="header__item">Sobre mi</a>
-            <a href="#study" class="header__item" href="#">Educación</a>
-            <a href="#proyectos" class="header__item">proyectos</a>
-
-        </nav>
-        
-        <p>Este es el principio de mi nueva historia, si no te molesta preparate para tener envidia de la buena</p>
+    <header>
+        <h1 class="title" >Selecciona tu programador</h1>
     </header>
-    
-    <section class="aboutMe" id="aboutMe">
-        <h2 class="title">Sobre me</h2>
-        <figure class="content img-container">
-            <img src="https://drive.google.com/uc?export=view&id=1_FAhJZnl4Pq7GnmYVcZZXnSz0I0xRLvC" alt="aquí toy">
-            <figcaption class="figcap">
-                <span>Este soy yo</span>
-            </figcaption>
-            <h1 class="img__title">El programador junior más pro</h1>
-        </figure>
-        <p class="section__item">Un apasionado de la tecnologia que disfruta de hacer locuras y cosas que para las personas "normales" podria ser imposibles, no dejes que su ternura te engañe es un emprendedor, un tiburon en el mundo de los negocios.
+    <main class="container">
+        <section class="target">
+            <!-- poner un enlace para cuando toquen la foto ir a la pagina de cada uno -->
+            <a href="me.html">
+            <img src="https://elcomercio.pe/resizer/fb2jKqQ4PoUl4R7SxuFSOLhn5C0=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/YVDKLIO6LVBB5BF2CN5DYPEYGA.jpg" alt="foto bien perrona de a yo"></a>
+                
+                
+        </section>
+        <section class="target">
+                        
+            <img src="https://elcomercio.pe/resizer/-ff-6d9vg7CILcQh-WvejY7_3lQ=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6FUBT6XQXNHHNFOMCHIT7I34NA.jpg" alt="foto de tu">
+             
+        </section>
+    </main>
+    <footer class="container footer">
+        <p>
+            Este es nuestro primer proyecto en conjunto, lo iniciamos el de 3 diciembre del 2023
         </p>
-        <!-- hacer 'targetas' cuyo titulo tengan preguntas que voy a responder cuando las abran -->
-        <p class="section__item">
-            Llevo ya 1 años tratando aprendiendo a programar de manera autodidacta, en este largo camino he tenido varios tropiezos, varias caidas y muchas veces pense en abandonar y hacer algo más tradicional, ser enfermero, policia, doctor, mecanico. Todas eran buenas opciones pero le faltaban algo de "chispa" que no lograba encontrar 
-        </p>
-    </section>
-    
-    <section class="study" id="study">
-        <h2 class="title">Estudios</h2>
-        <!-- lista de estudios -->
-        <img src="https://i.imgur.com/pzTQAIS.jpeg" alt="little cat">
-        <ul class="lista">
-            <li class="lista__item">primaria</li>
-            <li class="lista__item">bachillerato</li>
-            <li class="lista__item">sena</li>
-            <li class="lista__item">mintic</li>
-            <li class="lista__item">platzi</li>
-            <li class="lista__item">platzi</li>
-            <li class="lista__item">platzi</li>
-        </ul>
-    </section>
-    <section class="proyectos" id="proyectos">
-        <h2 class="title">Proyectos</h2>
-        <!-- cards with image of proyect -->
-        <div class="proyectos__card">va a ir la página
-            <span>titulo de proyecto</span>
-        </div>
-        <div class="proyectos__card">va a ir lo de mokepon
-            <span>otro titulo de proyecto</span>
-        </div>
-    </section>
-
-    <section class="contacMe" id="contacMe">
-        <h2 class="title">Contactame ;)</h2>
-        <form action="post" class="form">
-            <label for="name">Nombre</label><input id="name" type="text" placeholder="Nombre">
-            <label for="lastName">Apellido</label><input id="lastName" type="text" placeholder="Apellido">
-            <label for="email">Email</label><input id="email" type="email" placeholder="email">
-        </form>
-    </section>
-    <footer class="footer">
-        <span class="footer__item">Este es el footer</span>
-        <a href="#aboutMe" class="footer__item">Inicio</a>
     </footer>
-    
 </body>
 </html>
