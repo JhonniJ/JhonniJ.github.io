@@ -26,10 +26,14 @@ header, nav a{
     background-color: var(--primary-color);
     color: var(--title-color);
     font-size: 2rem;
-    padding: 2rem 1rem;
+    
 }
 header{
     height: 10rem;
+    padding: 2rem 2rem;
+}
+header nav a{
+    margin: 1rem;
 }
 .title{
     color: var(--gray-color);
@@ -56,6 +60,7 @@ section{
 }
 .section__item{
     font-size: 1.8rem;
+    margin: 1rem auto;
 }
 .aboutMe{
     background-color: var(--secundary-color);
@@ -67,14 +72,21 @@ section{
 
 .proyectos{
     background-color: var(--primary-color);
-    /* display: flex;
+    
+}
+.container{
+    max-width: 100rem;
+    height: 100%;
+    display: flex;
     flex-wrap: wrap;
-    text-align:center; */
+    gap: 1rem;
+    align-items: center;
 }
 .proyectos__card{
-    width: 30rem;
+    /* margin: 0.5rem; */
+    width: 26rem;
     height: 25rem;
-    background-color: var(--title-color);
+    background-color: var(--tertiary-color);
     
 }
 
@@ -89,11 +101,18 @@ footer {
     color: var(--secundary-color);
     
 }
-.imgContainer__item{
-    display: flow-root;
-    float: left;
+
+
+
+@media (min-width: 800px){
+    .imgContainer__item{
+        display: flow-root;
+        float: left;
+    }
+    .figcap{
+        display: flow-root;
+        padding: 2rem 4rem;
+        
+    }
 }
-.figcap{
-    display: flow-root;
-    padding: 2rem 4rem;
-}
+

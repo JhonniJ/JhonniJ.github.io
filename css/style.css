@@ -20,6 +20,33 @@ body{
     max-width: 100rem;
     margin: 0 auto;
 }
+
+header{
+    padding: 1rem;
+    /* text-align: center; */
+ 
+}
+span{
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 26ch;
+    
+
+    
+    animation: typing 4s steps(26), blink .5s infinite step-end alternate;
+    overflow: hidden;
+
+}
+
+@keyframes typing{
+    from {width: 0%}
+
+}
+@keyframes blink{
+    50% {border-color: transparent;}
+}
+
 main{
     background-color: var(--cuaternary-color);
     padding: 1rem;
@@ -37,11 +64,12 @@ img{
     /* height: 55rem ; */
     display: flex;
     flex-direction: column;
+    padding: 4rem 2rem;
 }
 
 .title{
     color: var(--secundary-color);
-    font-size: 4rem;
+    font-size: 2.3rem;
 }
 .target{
    
@@ -56,14 +84,27 @@ img{
     border: 1rem solid var(--secundary-color);
 }
 
+.footer{
+    background-color: var(--secundary-color);
+    padding: 1rem 2rem;
+}
+.footer p{
+    font-size: var(--font)
+}
 
 /* medias queries van de ultimo*/
 
  @media (min-width: 600px){ 
     .container{
-        width: auto;
+        /* width: auto; */
         display: flex;
         flex-direction:row;
     }
+    .title{
+        font-size: 4rem;
+    }
   
+    img{
+        height: 26rem;
+    }
 }
